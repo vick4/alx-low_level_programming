@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 		ree = read(fee, buffer, 1024);
 		tee = open(argv[2], O_WRONLY | O_APPEND);
 
-	} while (r > 0);
+	} while (ree > 0);
 
 	free(buffer);
 	close_file(fee);
